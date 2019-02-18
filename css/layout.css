@@ -1,0 +1,84 @@
+/* line 3, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+html, body {
+  height: 100%; }
+
+/* line 7, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+body {
+  display: flex;
+  flex-direction: column; }
+
+/* line 12, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+#navigation {
+  background: #FFF;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  padding: 5px; }
+  /* line 17, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+  #navigation button {
+    background: none;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+    padding: 5px 20px;
+    cursor: pointer; }
+    /* line 25, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+    #navigation button:hover {
+      background: #F2F2F2; }
+  /* line 30, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+  #navigation nav ul {
+    display: flex; }
+    /* line 32, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+    #navigation nav ul li {
+      margin-right: 5px; }
+      /* line 34, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+      #navigation nav ul li:last-child {
+        margin-right: 0; }
+  /* line 43, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+  #navigation .divider {
+    flex: 1; }
+
+/* line 48, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+#page {
+  background: #F2F2F2;
+  color: #333;
+  font-family: "Quicksand", sans-serif;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  /* line 57, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+  #page .controls {
+    display: flex; }
+    /* line 59, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+    #page .controls .group {
+      display: flex;
+      margin: 10px; }
+      /* line 62, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+      #page .controls .group button {
+        background: none;
+        color: #00B386;
+        border: 1px solid #00B386;
+        border-radius: 5px;
+        font-family: "Quicksand", sans-serif;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background .1s, color .1s; }
+        /* line 72, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+        #page .controls .group button:hover {
+          background: #00B386;
+          color: #FFF; }
+  /* line 80, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+  #page .output {
+    flex: 1;
+    display: flex; }
+    /* line 83, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+    #page .output .text {
+      max-width: 320px;
+      padding: 10px 20px 20px 20px;
+      overflow-y: auto;
+      white-space: pre-wrap; }
+    /* line 89, C:/Programming/Electron/Projects/neural-network/scss/layout.scss */
+    #page .output .chart {
+      flex: 1;
+      padding: 0 20px 20px 20px; }
