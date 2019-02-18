@@ -1,0 +1,8 @@
+{
+  "name": "neural-network",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "chart.js": "^2.2.2"
+  }
+}

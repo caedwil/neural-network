@@ -1,0 +1,97 @@
+$font-stack: 'Quicksand', sans-serif;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#navigation {
+  background: #FFF;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  padding: 5px;
+  button {
+    background: none;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    color: #333;
+    font-family: $font-stack;
+    padding: 5px 20px;
+    cursor: pointer;
+    &:hover {
+      background: #F2F2F2;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  #btn-run-all {
+
+  }
+  .divider {
+    flex: 1;
+  }
+}
+
+#page {
+  background: #F2F2F2;
+  color: #333;
+  font-family: $font-stack;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .controls {
+    display: flex;
+    .group {
+      display: flex;
+      margin: 10px;
+      button {
+        $accent: #00B386;
+        background: none;
+        color: $accent;
+        border: 1px solid $accent;
+        border-radius: 5px;
+        font-family: $font-stack;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background .1s, color .1s;
+        &:hover {
+          background: $accent;
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+  .output {
+    flex: 1;
+    display: flex;
+    .text {
+      max-width: 320px;
+      padding: 10px 20px 20px 20px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+    .chart {
+      flex: 1;
+      padding: 0 20px 20px 20px;
+      canvas {
+
+      }
+    }
+  }
+}

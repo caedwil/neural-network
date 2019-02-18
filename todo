@@ -1,0 +1,42 @@
+OPTIONS FOR DISPLAYING PAGES:
+- Each page has its own HTML, CSS, and JS (some may be common).
+- All share the same page, which means that each item is overwritten
+  rather than being loaded in.
+
+EACH PAGE VIEW SHOULD HAVE
+- Run button: runs the currently selected network.
+- Console output: displays useful output from the network
+  (eg. confusion matrices, accuracy, etc.)
+- Scatter plot: displays accuracy percentage against epochs for both
+  training and testing.
+
+> CONTROLS
+  > GROUP (runs the network)
+    > BUTTON: run
+  > GROUP (saves weights at specified epoch to file)
+    > NUMBER: epoch number
+    > BUTTON: save weights
+
+> INFORMATION
+  > CONSOLE (displays output from network: confusion matrices, accuracy, etc.)
+  > CHART (a scatter plot displaying accuracy percentage against epochs
+    for training and testing)
+
+IN ANY CASE, all networks will be loaded into memory throughout the lifetime
+of the program. Therefore, it would be best that the displaying of data and the
+running of the networks be separate. Otherwise if all networks were run, every
+network would then also attempt to display themselves (or at least update
+themselves which is still bad).
+
+IF all use same page:
+  loadPage() {
+    // Loads page into already displayed elements.
+    // All Javascript and CSS must already by available and loaded.
+  }
+ELSE IF all use separate pages:
+  loadPage() {
+    // Loads page from file and replaces 'body' element with the loaded
+    // data.
+    // Can load Javascript and CSS solely for that page. However, this means
+    // that this must be loaded every time the page is loaded.
+  }
